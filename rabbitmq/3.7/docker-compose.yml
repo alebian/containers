@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  db:
+    image: rabbitmq:3.7.6-alpine
+    networks:
+      - default
+    ports:
+      - "5672:5672"
+    volumes:
+      - rabbitmq_data:/data/db
+
+networks:
+  default:
+volumes:
+  rabbitmq_data:
