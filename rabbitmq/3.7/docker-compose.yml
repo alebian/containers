@@ -5,7 +5,7 @@ services:
     networks:
       - default
     ports:
-      - "5672:5672"
+      - 5672:5672
     volumes:
       - rabbitmq_data:/data/db
 
