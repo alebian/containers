@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run -e discovery.type=single-node \
+           -v 63_single_es_data:/usr/share/elasticsearch/data \
+           -p 9200:9200 \
+           -p 9300:9300 \
+           -d \
+           docker.elastic.co/elasticsearch/elasticsearch:6.3.0
