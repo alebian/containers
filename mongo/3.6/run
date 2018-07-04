@@ -2,7 +2,7 @@
 
 docker run -e MONGO_INITDB_ROOT_USERNAME=root \
            -e MONGO_INITDB_ROOT_PASSWORD=root \
-           -v mongo3_mongo3-data:/data/db \
-           -p 8081:8081 \
+           -v 36_mongo_data:/data/db \
+           -p 8081:27017 \
            -d \
            mongo:3.6.5-jessie

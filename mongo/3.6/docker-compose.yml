@@ -8,11 +8,11 @@ services:
     networks:
       - default
     ports:
-      - "8081:8081"
+      - "8081:27017"
     volumes:
-      - mongo3-data:/data/db
+      - mongo_data:/data/db
 
 networks:
   default:
 volumes:
-  mongo3-data:
+  mongo_data:

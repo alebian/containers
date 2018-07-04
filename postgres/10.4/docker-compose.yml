@@ -12,9 +12,9 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pg10-data:/var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data
 
 networks:
   default:
 volumes:
-  pg10-data:
+  pg_data:

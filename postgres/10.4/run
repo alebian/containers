@@ -4,7 +4,7 @@ docker run -e POSTGRES_USER=postgres \
            -e POSTGRES_PASSWORD=postgres \
            -e POSTGRES_DB=postgres \
            -e PGDATA=/var/lib/postgresql/data/pgdata \
-           -v pg10_pg10-data:/var/lib/postgresql/data \
+           -v 104_pg_data:/var/lib/postgresql/data \
            -p 5432:5432 \
            -d \
            postgres:10.4-alpine
