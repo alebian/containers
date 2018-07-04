@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  db:
+    image: mongo:3.6.5-jessie
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    networks:
+      - default
+    ports:
+      - "8081:8081"
+    volumes:
+      - mongo3-data:/data/db
+
+networks:
+  default:
+volumes:
+  mongo3-data:
