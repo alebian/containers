@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run -e "discovery.type=single-node" \
+           -v 651_es_single_data:/usr/share/elasticsearch/data \
+           -p 9200:9200 \
+           -p 9300:9300 \
+           -d \
+           elasticsearch:6.5.1
