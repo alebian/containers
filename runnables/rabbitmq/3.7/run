@@ -1,6 +1,0 @@
-#!/bin/bash
-
-docker run -v 37_rabbitmq_data:/data/db \
-           -p 5672:5672 \
-           -d \
-           postgres:10.4-alpine
