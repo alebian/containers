@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Hostname for local postgres in Mac is: docker.for.mac.host.internal"
+echo "Hostname for local postgres in Linux is: host.docker.internal or 172.17.0.1"
+
+docker run -p 5431:80 \
+           -v 4_pga_data:/var/lib/pgadmin \
+           -e "PGADMIN_DEFAULT_EMAIL=test@test.com" \
+           -e "PGADMIN_DEFAULT_PASSWORD=test" \
+           -d \
+           dpage/pgadmin4:8.12.0
